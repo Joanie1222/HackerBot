@@ -17,7 +17,7 @@ def getResponse(sendMsg):
     comeBacks = []
     exactReply = []
     exactMatch = .9
-    with open('data/chatbot.csv') as g:
+    with open('mybot/data/chatbot.csv') as g:
         lines = csv.reader(g)
         for line in lines:
             lineCount += 1
