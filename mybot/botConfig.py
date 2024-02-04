@@ -1,10 +1,10 @@
 #! /usr/bin/python3
 
 ##Change the following values to customize your ChatBot:
-myBotName = "Marvin the ChatBot"
-botTimeZone = "America/New_York"  ##See the list full below
-botAvatar = "/static/bot.png" ##This can either be an image in your static folder or a web url to an image
-chatBG = "/static/bg.jpg"  ##This can either be an image in your static folder or a web url to an image
+myBotName = "The hacker generative AI"
+botTimeZone = "America/Montreal"  ##See the list full below
+botAvatar = "/mybot/static/HackerAvatar.jpg" ##This can either be an image in your static folder or a web url to an image
+chatBG = "/mybot/static/hackerbg.jpg"  ##This can either be an image in your static folder or a web url to an image
 useGoogle = "yes" ## yes or no if you want Google links provided when your Bot does not have an answer
 confidenceLevel = 0.65 ##Bot confidence level - must be betwee. 0.00 and 1, default is 0.65
 

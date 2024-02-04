@@ -16,21 +16,21 @@ print("This is a " + imageExt + "file.")
 urllib.request.urlretrieve(imageURL, "avatar." + imageExt)
 
 #Does the file exist yet?
-exists = os.path.isfile('static/bot.png')
+exists = os.path.isfile('/mybot/static/bot.png')
 
 #Convert to png
 if imageExt == 'png':
     ##Move to replace the avatar file
     if exists:
-        os.remove('static/bot.png')
-    os.rename('avatar.png','static/bot.png')
+        os.remove('/mybot/static/HackerAvatar.jpg')
+    os.rename('avatar.png','/mybot/static/bot.png')
     print('Success! Your ChatBot avatar has been updated.')
 elif imageExt == 'jpg':
     #Convert to png
     if exists:
-        os.remove('static/bot.png')
+        os.remove('/mybot/static/badbot.png')
     image = Image.open('avatar.jpg')
-    image.save('static/bot.png')
+    image.save('/mybot/static/bot.png')
     os.remove('avatar.jpg')
     print('Success! Your ChatBot avatar has been updated.')
 elif imageExt == 'gif':
